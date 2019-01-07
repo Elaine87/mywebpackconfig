@@ -1,0 +1,51 @@
+#
+# Created Date: 2018-10-15, 11:27:33 am
+# Author: panmin
+# -----
+# Last Modified: Mon Oct 15 2018
+# Modified By: panmin
+# -----
+# Copyright (c) 2018 蘑菇智行
+# ------------------------------------
+# Make it run , Make it right, Make it fast!
+# EditorConfig is awesome: https://EditorConfig.org
+
+
+
+# top-most EditorConfig file
+root = true
+
+# Matches any string of characters, except path separators (/)
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+max_line_length = 140
+
+[test/*]
+max_line_length = off
+
+[*.md]
+max_line_length = off
+
+[*.json]
+max_line_length = off
+
+[Makefile]
+max_line_length = off
+
+[CHANGELOG.md]
+indent_style = space
+indent_size = 2
+
+[LICENSE]
+indent_size = 2
+max_line_length = off
+# Matches multiple files with brace expansion notation
+# Set default charset
+#[*.{js,py}]
+
+

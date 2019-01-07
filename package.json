@@ -1,0 +1,103 @@
+{
+  "name": "mutipages",
+  "version": "1.0.0",
+  "description": "bootstrap of mutipages",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "cross-env DEV_ENV=development webpack-dev-server --progress --color --config ./build/webpack.dev.config.js",
+    "dev:mock": "cross-env DEV_ENV=development MOCK=true webpack-dev-server --progress --color --config ./build/webpack.dev.config.js",
+    "qa": "cross-env DEV_ENV=test webpack --progress --color --config ./build/webpack.qa.config.js",
+    "build": "cross-env DEV_ENV=production webpack --progress --color --config ./build/webpack.prod.config.js",
+    "brw": "node ./build/development.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "215696013@qq.com",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.3.1",
+    "autoprefixer-loader": "^3.2.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-istanbul": "^5.1.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es3": "^1.0.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "browser-sync": "^2.26.3",
+    "bs-fullscreen-message": "^1.1.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.6.0",
+    "cross-env": "^5.2.0",
+    "css-loader": "^0.28.11",
+    "declaration-bundler-webpack-plugin": "^1.0.3",
+    "eslint": "^5.9.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-html": "^5.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "execa": "^1.0.0",
+    "express": "^4.16.4",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^1.1.11",
+    "fs-extra": "^7.0.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^4.0.0-beta.5",
+    "html-withimg-loader": "^0.1.16",
+    "mini-css-extract-plugin": "^0.4.5",
+    "node-sass": "^4.10.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "ora": "^3.0.0",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "raw-loader": "^0.5.1",
+    "sass": "^1.14.3",
+    "sass-loader": "^7.1.0",
+    "script-loader": "^0.7.2",
+    "scss-loader": "^0.0.1",
+    "shebang-regex": "^2.0.0",
+    "strip-ansi": "^5.0.0",
+    "style-loader": "^0.21.0",
+    "stylus-loader": "^3.0.2",
+    "ts-lint": "^4.5.1",
+    "ts-loader": "^5.3.2",
+    "typescript": "^3.2.2",
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "url-loader": "^1.0.1",
+    "vconsole-webpack-plugin": "^1.4.2",
+    "webpack": "^4.8.3",
+    "webpack-api-mocker": "^1.5.15",
+    "webpack-bundle-analyzer": "^3.0.3",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-middleware": "^3.4.0",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-merge": "^4.1.4",
+    "webpack-zip-plugin": "^0.1.6"
+  },
+  "config": {
+    "config": {
+      "commitizen": {
+        "path": "node_modules/cz-customizable"
+      },
+      "cz-customizable": {
+        "config": "./cz-config.js"
+      }
+    }
+  },
+  "browserslist": [
+    "defaults",
+    "not ie < 8",
+    "last 2 versions",
+    "> 1%",
+    "iOS 7",
+    "last 3 iOS versions"
+  ]
+}
